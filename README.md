@@ -1,5 +1,4 @@
 ---
-TEST SUCCESS 1
 topic: sample
 languages:
   - python
