@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "kubetestcluster-a65e"
+    labels:
+        app: "kubetestcluster-a65e"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: kubetestcluster20b1-kubetestcluster-a65e.89f664abf6b6400582d8.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "kubetestcluster-a65e"
+                servicePort: 80
